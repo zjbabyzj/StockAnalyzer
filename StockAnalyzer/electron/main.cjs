@@ -10,12 +10,12 @@ function createWindow() {
     height: 800
   })
 
-  win.loadURL("http://localhost:8000/health")
+ win.loadFile("index.html")
 }
 
 app.whenReady().then(() => {
-  const backendPath = path.join(__dirname, "../backend/main.py")
-  backendProcess = spawn("python", [backendPath])
+// const backendPath = path.join(__dirname, "../backend/main.py")
+// backendProcess = spawn("python", [backendPath])
 
   createWindow()
 })
